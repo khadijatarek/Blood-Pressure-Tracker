@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="084adf35-8f4c-47ac-9f6f-5406914746d4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62482/BloodPressureWCF.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BloodPressureWCF.xsd" MetadataType="Schema" ID="06ee0782-055d-4389-afed-50ac3003d687" SourceId="1" SourceUrl="http://localhost:62482/BloodPressureWCF.svc?xsd=xsd2" />
+    <MetadataFile FileName="BloodPressureWCF.disco" MetadataType="Disco" ID="872808bc-7d78-484a-8285-ea5505072165" SourceId="1" SourceUrl="http://localhost:62482/BloodPressureWCF.svc?disco" />
+    <MetadataFile FileName="BloodPressureWCF.wsdl" MetadataType="Wsdl" ID="7b318163-27bb-40a9-b425-fc3503f63882" SourceId="1" SourceUrl="http://localhost:62482/BloodPressureWCF.svc?wsdl" />
+    <MetadataFile FileName="BloodPressureWCF1.xsd" MetadataType="Schema" ID="ed65d667-4766-4bcf-ba49-de02daed8148" SourceId="1" SourceUrl="http://localhost:62482/BloodPressureWCF.svc?xsd=xsd0" />
+    <MetadataFile FileName="BloodPressureWCF2.xsd" MetadataType="Schema" ID="060e58bc-9395-4bb5-9eaa-82f1047431d8" SourceId="1" SourceUrl="http://localhost:62482/BloodPressureWCF.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

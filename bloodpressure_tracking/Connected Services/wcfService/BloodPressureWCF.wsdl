@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BloodPressureWCF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:62482/BloodPressureWCF.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:62482/BloodPressureWCF.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:62482/BloodPressureWCF.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBloodPressureWCF_GetDietRecommendation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDietRecommendation" />
+  </wsdl:message>
+  <wsdl:message name="IBloodPressureWCF_GetDietRecommendation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDietRecommendationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBloodPressureWCF_GetBloodPressureRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBloodPressureRange" />
+  </wsdl:message>
+  <wsdl:message name="IBloodPressureWCF_GetBloodPressureRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBloodPressureRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBloodPressureWCF_GetBloodPressureReadings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBloodPressureReadings" />
+  </wsdl:message>
+  <wsdl:message name="IBloodPressureWCF_GetBloodPressureReadings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBloodPressureReadingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBloodPressureWCF_getReminder_InputMessage">
+    <wsdl:part name="parameters" element="tns:getReminder" />
+  </wsdl:message>
+  <wsdl:message name="IBloodPressureWCF_getReminder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getReminderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBloodPressureWCF">
+    <wsdl:operation name="GetDietRecommendation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBloodPressureWCF/GetDietRecommendation" message="tns:IBloodPressureWCF_GetDietRecommendation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBloodPressureWCF/GetDietRecommendationResponse" message="tns:IBloodPressureWCF_GetDietRecommendation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBloodPressureRange">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBloodPressureWCF/GetBloodPressureRange" message="tns:IBloodPressureWCF_GetBloodPressureRange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBloodPressureWCF/GetBloodPressureRangeResponse" message="tns:IBloodPressureWCF_GetBloodPressureRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBloodPressureReadings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBloodPressureWCF/GetBloodPressureReadings" message="tns:IBloodPressureWCF_GetBloodPressureReadings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBloodPressureWCF/GetBloodPressureReadingsResponse" message="tns:IBloodPressureWCF_GetBloodPressureReadings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getReminder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBloodPressureWCF/getReminder" message="tns:IBloodPressureWCF_getReminder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBloodPressureWCF/getReminderResponse" message="tns:IBloodPressureWCF_getReminder_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBloodPressureWCF" type="tns:IBloodPressureWCF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDietRecommendation">
+      <soap:operation soapAction="http://tempuri.org/IBloodPressureWCF/GetDietRecommendation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBloodPressureRange">
+      <soap:operation soapAction="http://tempuri.org/IBloodPressureWCF/GetBloodPressureRange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBloodPressureReadings">
+      <soap:operation soapAction="http://tempuri.org/IBloodPressureWCF/GetBloodPressureReadings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReminder">
+      <soap:operation soapAction="http://tempuri.org/IBloodPressureWCF/getReminder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BloodPressureWCF">
+    <wsdl:port name="BasicHttpBinding_IBloodPressureWCF" binding="tns:BasicHttpBinding_IBloodPressureWCF">
+      <soap:address location="http://localhost:62482/BloodPressureWCF.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

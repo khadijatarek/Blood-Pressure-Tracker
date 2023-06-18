@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bloodpressure_tracking", "bloodpressure_tracking.csproj", "{BDD0A122-0BFA-41C0-AF4E-C4FADDAA917B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD0A122-0BFA-41C0-AF4E-C4FADDAA917B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD0A122-0BFA-41C0-AF4E-C4FADDAA917B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD0A122-0BFA-41C0-AF4E-C4FADDAA917B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD0A122-0BFA-41C0-AF4E-C4FADDAA917B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4377D6EB-10CD-4091-8B7C-BC166AE1F1F0}
+	EndGlobalSection
+EndGlobal

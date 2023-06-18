@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bloodpressure_wcf", "bloodpressure_wcf.csproj", "{C5E0020B-AB86-4506-B6EB-1D69D027DBA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5E0020B-AB86-4506-B6EB-1D69D027DBA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E0020B-AB86-4506-B6EB-1D69D027DBA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E0020B-AB86-4506-B6EB-1D69D027DBA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E0020B-AB86-4506-B6EB-1D69D027DBA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1611408C-9123-47B4-8D6F-E1061A82E156}
+	EndGlobalSection
+EndGlobal
